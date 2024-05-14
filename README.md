@@ -3,3 +3,5 @@
 
 ## pet-planet
 ## PetPlanet Pet Shop
+
+В этой ветке Вторая часть проетка PetPlanet повторяем как в уроке за Максимом
