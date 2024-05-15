@@ -4,8 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --open",
+    "init": "npm install",
+    "start": "vite --open",
+    "dev": "vite",
     "build": "vite build",
+    "clear": "rm -fr /dist",
     "preview": "vite preview --open"
   },
   "devDependencies": {
