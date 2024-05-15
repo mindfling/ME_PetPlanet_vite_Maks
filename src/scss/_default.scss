@@ -91,3 +91,9 @@ p {
     padding: 0 14px;
   }
 }
+
+
+::selection {
+  background-color: darkmagenta;
+  color: $light;
+}

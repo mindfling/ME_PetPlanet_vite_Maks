@@ -86,9 +86,24 @@
     font-size: 24px;
     text-align: center;
     position: relative;
+    opacity: 1;
+    outline: 1px solid transparent;
+    transition-property: background-color, transform;
+    transition-duration: 300ms, 200ms;
+    transition-timing-function: ease-in-out;
 
     &:hover {
-      opacity: .9;
+      background-color: #00772f;
+    }
+
+    &:focus-visible {
+      background-color: $green;
+      outline-color: $carrot;
+    }
+
+    &:active {
+      // opacity: .4;
+      transform: scale(.9);
     }
 
     &::after {
@@ -97,6 +112,14 @@
       width: 16px;
       height: 16px;
       background: url('/img/arrow-up.svg') no-repeat center/contain;
+    }
+
+    @include laptop {
+      padding: 16px 36px;
+    }
+
+    @include mobile {
+      padding: 11px 24px;
     }
   }
 }
