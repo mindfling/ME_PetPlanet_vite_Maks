@@ -1,5 +1,10 @@
+@use "../variables" as *;
+
+
 .store {
   display: block;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
   &__container {
     display: flex;
@@ -19,7 +24,6 @@
     width: 100%;
     margin-bottom: 40px;
 
-    color: #E47537;
   }
 
   &__category-item {
@@ -29,13 +33,32 @@
     align-items: center;
     gap: 28px;
 
-    color: green;
+    color: $green;
   }
 
 
 
   &__category-button {
-    color: orange;
+    color: $carrot;
+  }
+
+
+  &__title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 130%;
+    color: $green;
+    margin-bottom: 32px;
+  }
+
+
+  &__list {
+    border: 1px solid lawngreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
 }
